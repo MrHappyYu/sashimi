@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/typescript/package.json'\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/vue-tsc/package.json'\\).version\\)\")",
+      "Bash(npm install:*)",
+      "Bash(node -e \"require\\('./node_modules/eslint/package.json'\\) && console.log\\('eslint ok'\\)\")",
+      "Bash(node -e \"require\\('./node_modules/prettier/package.json'\\) && console.log\\('prettier ok'\\)\")",
+      "Bash(npx eslint:*)",
+      "Bash(npx prettier:*)",
+      "Bash(npx vite:*)",
+      "Skill(tutor-setup)",
+      "Bash(npx vue-tsc:*)"
+    ]
+  }
+}
