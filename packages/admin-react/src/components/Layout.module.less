@@ -1,0 +1,70 @@
+@import '../assets/styles/variables.less';
+
+.layout {
+  min-height: 100vh;
+}
+
+.sider {
+  background: @bg-dark !important;
+}
+
+.logo {
+  height: @header-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: @primary;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu {
+  background: @bg-dark !important;
+}
+
+.header {
+  background: #fff !important;
+  padding: 0 16px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.adminName {
+  color: #666;
+}
+
+.bell {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.bellRinging {
+  color: @primary;
+  animation: bellRing 1s infinite alternate;
+}
+
+@keyframes bellRing {
+  from {
+    color: red;
+    transform: rotate(-15deg);
+  }
+  to {
+    color: @primary;
+    transform: rotate(15deg);
+  }
+}
+
+.content {
+  margin: @content-margin;
+  background: #f0f2f5;
+  min-height: 280px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "sashimi",
+  "version": "1.0.0",
+  "description": "刺身点单预订系统 - Monorepo",
+  "private": true,
+  "scripts": {
+    "dev:admin": "pnpm --filter @sashimi/admin dev",
+    "dev:admin-react": "pnpm --filter @sashimi/admin-react dev",
+    "dev:miniapp": "pnpm --filter @sashimi/miniapp dev",
+    "dev:backend": "cd packages/backend && mvn spring-boot:run",
+    "build:admin": "pnpm --filter @sashimi/admin build",
+    "build:admin-react": "pnpm --filter @sashimi/admin-react build",
+    "build:miniapp": "pnpm --filter @sashimi/miniapp build:mp-weixin",
+    "build:backend": "cd packages/backend && mvn clean package -DskipTests",
+    "build": "pnpm --filter @sashimi/admin build && pnpm --filter @sashimi/admin-react build && pnpm --filter @sashimi/miniapp build:mp-weixin",
+    "lint": "pnpm --filter @sashimi/admin lint && pnpm --filter @sashimi/admin-react lint",
+    "format": "pnpm --filter @sashimi/admin format"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

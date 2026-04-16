@@ -1,0 +1,46 @@
+@import '../assets/styles/variables.less';
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, @bg-dark 0%, @bg-mid 50%, @bg-deep 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 48px 40px;
+  width: 400px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 36px;
+
+  .logo {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    color: @text-title;
+    font-size: 22px;
+    margin: 0;
+  }
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, @primary, @primary-dark) !important;
+  border: none !important;
+}
+
+.hint {
+  text-align: center;
+  color: @text-muted;
+  font-size: 13px;
+  margin-top: 16px;
+}

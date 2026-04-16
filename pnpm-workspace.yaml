@@ -1,0 +1,4 @@
+packages:
+  - 'packages/admin'
+  - 'packages/admin-react'
+  - 'packages/miniapp'
